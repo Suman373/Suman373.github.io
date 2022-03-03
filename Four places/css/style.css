@@ -1,0 +1,132 @@
+
+/* CSS RESET */
+*{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    margin:0;
+    font-family:'Akaya Telivigala', cursive;
+}
+
+h1{
+    padding-top:1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin:0;
+}
+
+h2{
+    /* Using rem units to make it to the root em, good for responsiveness */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-top:0;
+
+}
+
+p{
+    /* line spaces makes it look neat */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.3rem;
+    line-height: 1.75; 
+}
+
+a{
+    /* inherits the color of the parent which is the section/div */
+    font-size: 1.3rem;
+    color:inherit;
+}
+
+section{
+
+    padding:1.8rem 0;
+}
+.container{
+    /* container is class in all the sections therefore making to simple to adjust the orientation of the sections irrespective of their contents. */
+    width:70%;
+    margin:0 auto;
+}
+
+
+
+.top{
+    background:url('../images/victoria.jpg')no-repeat center center/cover;
+    color:rgb(214, 214, 67);
+}
+
+.mid1{
+    background: url('../images/hoogly.jpg')no-repeat center center/cover;
+    color:rgb(236, 173, 173);
+
+}
+.black{
+    color:black;
+}
+
+
+.main{
+    background: url('../images/clock.jpg')no-repeat center center/cover;
+    color:rgb(248, 214, 18);
+}
+
+.below{
+    background:url('../images/musuem.jpg')no-repeat  center/cover;
+    color:rgb(16, 240, 221);
+}
+
+.btn{
+    font-size: 1rem;
+    display:inline-block;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+}
+
+.btn-vic:hover{
+    background: linear-gradient(
+        to top right,
+        white,rgb(165, 63, 80) 20%
+    );
+}
+
+.btn-bridge:hover{
+    background: linear-gradient(
+        to top right,
+       white,rgba(28, 75, 85, 0.788) 20%
+    );
+}
+.btn-clock:hover{
+    background: linear-gradient(
+        to top right,
+       white,rgb(31, 101, 122) 20%
+    );
+}
+.btn-road:hover{
+    background: linear-gradient(
+        to top right,
+       white,rgb(28, 31, 32) 20%
+    );
+}
+.btn-museum:hover{
+    color:black;
+    background: linear-gradient(
+        to top right,
+       white,rgb(211, 197, 67) 20%
+    );
+}
+
+footer{
+    text-align: center;
+    font-size:1rem;
+    color:white;
+    background:linear-gradient(
+        to right,
+        yellow,red,blue,pink
+    );
+    font-family: 'Times New Roman', Times, serif;
+}
