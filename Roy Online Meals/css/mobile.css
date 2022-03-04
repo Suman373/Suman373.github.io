@@ -1,0 +1,70 @@
+/* NAVIGATION */
+
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem; 
+    padding: 0px 7px;
+}
+
+
+/* HOME */
+
+#home{
+    /* overflow: hidden; */
+    height: 370px;
+    padding:2px 45px;
+
+}
+#home::before{
+    height: 497px;
+}
+
+#home p{
+    font-size: 0.8rem;
+}
+
+/* SERVICES */
+
+#services{
+    flex-direction: column;
+
+}
+#services .box {
+    padding: 17px;
+    margin: 2px 0px;
+    margin-bottom: 10px;
+}
+
+
+/* CLIENTS */
+
+#clients{
+    /* overflow: hidden; this was supposed to hide the overflow when page is adjusted but flex wrap is better alternative to adjust the clients/sponsors in wrap  */
+    flex-wrap: wrap;
+}
+#clients img{
+    width:55px;
+    padding:8px;
+}
+
+
+/* CONTACT US  */
+
+#contact-box{
+    width:99%;
+}
+
+/* footer  */
+
+
+/* Utility classes */
+.h-primary{
+    font-size:1.2rem;
+}
+.btn{
+    font-size: 0.9rem;
+    padding:4px 8px;
+}
