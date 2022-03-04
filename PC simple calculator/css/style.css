@@ -1,0 +1,128 @@
+/* CSS RESET */
+*{
+    padding:0;
+    margin:0;
+}
+/* Designing the background */
+body{
+    background: fixed;
+    background-image: linear-gradient(
+        to top right ,
+        rgb(201, 106, 16) ,rgb(182, 150, 47),rgb(83, 124, 83),rgb(39, 39, 114)
+    );
+}
+
+h3{
+    background: -webkit-linear-gradient(rgb(212, 32, 32) 85%,blue);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    padding-top:40vh;
+    padding-left: 2rem;
+    left:10px;
+    font-size: 25px;
+}
+h4{
+    
+    background: -webkit-linear-gradient(rgb(194, 57, 57) 20%,blue);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    padding-top:18px;
+    padding-left: 2rem;
+    left:10px;
+    font-size: 20px;
+   
+}
+
+
+
+.calci{
+    width:500px;
+    padding-top:100px;
+    padding-bottom:100px;
+    position: absolute;
+    text-align: center;
+    top:50%;
+    left:70%;
+    transform:translate(-50%,-50%);
+    transition: 0.25px;
+    /* background-color: black; */
+}
+
+#display{
+    border:none;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    width:245px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    height: 60px;
+    margin:auto;
+    border:2px solid white;
+    color:black;
+
+}
+
+.numdesign{
+    width:50px;
+    height:50px;
+    padding-top:-1;
+    border:2px solid rgb(61, 88, 19);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius:10px;
+    margin:3px;
+    cursor:pointer;
+}
+.numdesign:hover{
+    background-color:rgb(199, 153, 68);
+}
+.operator{
+    width:50px;
+    height:50px;
+    padding-top:-1;
+    border:2px solid rgb(61, 88, 19);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius:10px;
+    margin:3px;
+    transition: 0.25px;
+    cursor:pointer;
+    
+}
+
+.operator:hover{
+    background:rgb(102, 184, 126);
+}
+
+
+#zero{
+    width:112px;
+    height:50px;
+    padding-top:-1;
+    border:2px solid rgb(61, 88, 19);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius:10px;
+    margin:3px;
+    transition: 0.25px;
+    cursor:pointer;
+}
+
+#zero:hover{
+    background-color: rgb(91, 103, 158);
+}
+
+footer>p{
+    background: -webkit-linear-gradient(rgb(212, 32, 32) 85%,blue);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    position:absolute;
+    top:116%;
+    left:40%;
+    font-size: 1rem;
+    font-weight: 800;
+}
