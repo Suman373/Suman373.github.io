@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Editing the header */
+.textedit{
+    background: -webkit-linear-gradient(yellow,purple,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*This is the body part*/
+body{
+    display: grid;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* The display box where game is given */
+#game{
+    background: url('./images/animatedbg.gif')no-repeat center center/cover;
+    width:700px;
+    height:400px;
+    margin:auto;
+    border:2px solid white;
+}
+/* Our character i.e., the dino */
+#dino{
+    height:150px;
+    width:150px;
+    position:relative;
+    top:280px;
+    background: url('.//images/bgless\ dino.png');
+    background-size: cover;
+}
+
+/* The enemy i.e.,the allosaurus */
+#enemy{
+    height:100px;
+    width:150px;
+    position:relative;
+    top:160px;
+    left:550px;
+    background: url('./images/bg\ less\ enemy.png');
+    background-size: cover;
+    animation:enemy 1500ms infinite ;
+}
+/* animation of the runnning enemy */
+@keyframes enemy{
+    0%{left:550px;}
+    100%{left:-150px;}
+}
+
+/* animation of the jumping dino */
+.jump_animation{
+    animation: jump 500ms;
+}
+
+@keyframes jump{
+    0%{top:280px;}
+    30%{top:100px;}
+    70%{top:100px;}
+    100%{top:280px;}
+}
+
+/* Editing the footer content */
+#footer{
+    background: -webkit-linear-gradient(rgb(248, 104, 104),rgb(245, 222, 20));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-size: 1.1rem;
+    position:absolute;
+    bottom:0;
+    width: 100%;
+}
