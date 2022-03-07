@@ -1,0 +1,32 @@
+/* CSs REset */
+*{
+    margin:0;
+    padding:0'
+}
+
+
+body{
+    background: linear-gradient(
+        -45deg,
+      hotpink, turquoise, #ff3
+    );
+    background-size: 200% 200%;
+    animation : gradient 15000ms infinite ease;
+    height:100vh;
+    text-align: center;
+    color:rgb(49, 62, 100);
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
