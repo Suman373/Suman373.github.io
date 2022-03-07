@@ -4,8 +4,11 @@
 
 #### Requirements : Internet Access, Updated version of Chrome, Firefox, Safari or any other not so old browsers.
 
-#### About me : My name is Suman Roy, studying CS if you haven't checked my github profile yet. I am currently learning more handy and advanced front-end with HTML5 and CSS3 mostly.
+#### Acknowledgement: I am self-taught . You can be too! Consistency will take you very far my friend. I am grateful to the youtubers who post such quality contents to teach the novices how to code or design websites and many more. The well structured playlists are the actual flex. Few mentions are : CodewithHarry , Kevin Powell , Online Tutorials , and many more.
 
-I am looking to contribute to open source developments as I am completely beginner in that, still gotta start somewhere.I am available for freelance front-end static website design . You can email me at: iamroy53@gmail.com
+If you want to improve any of code , do put up a pull request. This repo is public [ You know right!! ;) ]
 
-Make Sure to check my other projects out from the public repositories. Thank you for visiting my website! Have a good one!
+I am looking to contribute to open source projects.I don't know where to start If you are reading this and know about it, please help me too!
+#### Contact me?  You can email me at: iamroy53@gmail.com
+
+Thank you for your visit ! Have a good one!
