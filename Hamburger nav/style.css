@@ -1,0 +1,182 @@
+*,*::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+  :root{
+    --blue:rgba(40,45,85,0.8);
+  }
+  
+  body{
+    background-color:white;
+  }
+  
+  .content{
+    height:200vh;
+    background-image:url('https://images.unsplash.com/photo-1647105523228-c3294ecbba04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-color:#589;
+    display:grid;
+    margin:0 auto;
+    color:white;
+    place-items:center;
+    overflow:hidden;
+    background-blend-mode:multiply;
+  }
+  
+  header{
+    background:var(--blue);
+    text-align:center;
+    position:fixed;
+    width:100%;
+    color:white;
+    z-index:999; /* big number makes sure that our header part is stacked above all other items while using position fixed*/
+  }
+  .logo{
+    margin:0;
+    padding:0;
+  }
+  /* designing the navigation menu */
+  .nav-toggle{
+    display:none; /*removes the span x*/
+  }
+  .nav-toggle-label{
+    position:absolute;
+    top:0;
+    left:0;
+    margin:0.7rem;
+    display:flex;
+    align-items:center;
+  }
+  
+  /* pseudo elements are used to create the hamburger lines */
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after{
+    display:block;
+    background:white;
+    height:3px;
+    width:1.2rem;
+    border-radius:2px;
+    position:relative; /*making it as the relative pos for other lines*/
+  }
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after{
+    content:'';
+    position:absolute;
+  }
+  /* adjusting the top bottom postion of after and before lines of the hamburger  */
+  .nav-toggle-label span::before{
+    bottom:-7px;
+  }
+  .nav-toggle-label span::after{
+    top:14px;
+  }
+  
+  nav{
+    position:absolute; /* parent relative positioned is the header*/
+    text-align:left;
+    top:100%;
+    left:0;
+    background:var(--blue);
+    width:100%;
+  /*   display:none; */
+    transform: scale(1,0);
+    transform-origin:top;
+    transition: transform 400ms ease-in-out;
+  }
+  
+  nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  nav li{
+    margin-bottom:0.5rem;
+    margin-left:0.7rem;
+  }
+  nav a{
+    color:white;
+    text-decoration:none;
+    font-size:1.2rem;
+  /*   text-transform:uppercase; */
+    opacity:0;
+    transition:opacity 150ms ease;
+  /* first opacity 0(invisible) then transition makes it visible(0-1)150ms
+    here it will work after menu is checked so the 150ms makes menu go up fast avoiding the scaling transition*/
+  }
+  nav a:hover{
+    color:yellow;
+  }
+  /* checked is a pseudo class which checks a ticked checkbox */
+  /* ~ preceeding sibling */
+  .nav-toggle:checked ~ nav{
+  /*   display:block; */
+    transform: scale(1,1);
+  }
+  /*preceding sibling nav with a child a  */
+  .nav-toggle:checked ~ nav a{
+    opacity:1;
+    transition:opacity 300ms ease 250ms;
+  /*    this transition works when the hamby is clicked thus making the menu fall down first then make the li become visible slowly*/
+  }
+  /* adding our media queries */
+  @media screen and (min-width:700px){
+    .nav-toggle-label{
+      display:none;
+    }
+    header{
+      display:grid;
+      grid-template-columns: 1fr auto minmax(500px,3fr) 1fr;
+  /*  4 cols: 1fr(leftover) auto logo nav in minmax leftover 1fr for other part     */
+    }
+    .logo{
+      grid-column:2/3; /*takes the 2nd line to 3rd line */
+    }
+    nav{
+      all:unset; /* unsets all styling for this specific query*/
+      grid-column:3/4; 
+      display:flex;
+      justify-content:flex-end;
+      align-items:center;
+    }
+    nav ul{
+      display:flex; /*aligned horizontally*/
+    }
+    nav li{
+      margin-bottom:0;
+      margin-left:1rem;
+      position:relative;
+    }
+    
+    nav a{
+      opacity:1;
+    }
+  /* hover effect on the li(items of navbar) */
+    nav a::before{
+      content:'';
+      display:block;
+      height:3px;
+      background:aquamarine;
+      position:absolute;
+      bottom:-0.3rem;
+      left:0;
+      right:0;
+      transform:scale(0,1);/*only the width scaling */
+      transition:transform ease 300ms;
+    }
+    nav a:hover{ color:aquamarine;
+    text-shadow:1px 2px 0px black;} /*the yellow doesn't look good*/
+    nav a:hover::before{
+  /*     transform-origin:left; */
+      transform:scale(1,1);
+    }
+  }
+  
+  
+  
+  
+  
+  
