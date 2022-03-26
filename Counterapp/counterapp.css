@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/* CSS RESET */
+
+*, *::after, *::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/* Styling of the body part  */
+body{
+    color:black;
+    
+}
+/* To make the background image lighter and the content to lie above it. LEss opaque bg is good for clarity and lowers risk of eye strain due to bright contrasting colors */
+body::before{
+    content:" ";
+    background: url('https://images.unsplash.com/photo-1620285470500-b531638d7682?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1ldHJvJTIwc3RhdGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60')no-repeat center center/cover;
+    position: absolute;
+    top:0;
+    left:0;
+    height:150%;
+    width:100%;
+    z-index: -1;
+    opacity:0.9;
+}
+
+/* Styling of the container which has our heading and the count */
+.container{
+    display: grid;
+    height: 20rem;    
+    place-items: center;
+    margin-top:5rem;
+    /* the border was for checking the responsiveness and content alingment purpose */
+    /* border:2px solid rgb(238, 243, 238);  */
+}
+/* the heading  */
+h1{
+    font-size:3rem;
+}
+
+/* the counter variable */
+h2{
+    font-size: 3rem;
+    margin-bottom:5rem;
+}
+.btn{
+    padding-top:10px;
+    padding-bottom:10px;
+    width:10rem;
+    border:2px solid rgb(42, 156, 132);
+    color:white;
+    font-weight: 600;
+    border-radius: 10px;
+    text-shadow: 0 2px 2px black;
+    cursor: pointer;
+}
+/* adding the hover effect */
+.btn:hover{
+    transform: scale(1.02);
+}
+/* styling the specific buttons */
+#enter{
+    background: rgba(155, 44, 44, 0.986);
+    font-size: 1rem;
+}
+
+#save{
+    background: rgba(47, 129, 22);
+    font-size: 1rem;
+}
+
+/* the display of the previous entries */
+.count-display{
+    height:2.5rem;
+    font-size: 2rem;
+    width:100%;
+    margin:2rem auto;
+    text-align: center;
+    color:white;
+    text-shadow:2px 0 3px black;
+}
+
+/* Styling the footer */
+footer{
+    position: relative;
+    bottom:-2rem;
+    width:100%;
+}
+.footer>p{
+    text-align: center;
+    color:black;
+    text-shadow:0 1px 0.5px white;
+    font-weight: 700;
+}
+/* Mobile responsive */
+@media screen and (max-width:461px){
+    .container{
+        text-align: center;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size:2rem;
+    }
+    .btn{
+        padding-top:5px;
+        padding-bottom:5px;
+        width:7rem;
+    }
+    .count-display{
+        font-size: 1.5rem;
+    }
+    
+}
+/* for adjusting the footer due to height of the screen */
+@media screen and (max-height:1024px){
+    footer{
+        position: fixed;
+        bottom:0;
+    }
+}
