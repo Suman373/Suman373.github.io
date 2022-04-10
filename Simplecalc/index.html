@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="title"><h3>Simple calculator</h3></header>
+    <div class="container">
+        <div class="box">
+        <form name="form" action="Simple calculator.html" class="calci" method="post">
+            <input name="panel" type="text" id="display">
+            <br><br>
+            <input type="button" class="numdesign" value="AC" onclick="form.panel.value=''">
+            <input type="button" class="numdesign" value="C"
+                onclick="form.panel.value=form.panel.value.substring(0,form.panel.value.length*1 -1)">
+            <input type="button" class="numdesign" value="00" onclick="form.panel.value +='00'">
+            <input type="button" class="operator" value="/" onclick="form.panel.value +='/'">
+            <br><br>
+            <input type="button" class="numdesign" value="7" onclick="form.panel.value +='7'">
+            <input type="button" class="numdesign" value="8" onclick="form.panel.value +='8'">
+            <input type="button" class="numdesign" value="9" onclick="form.panel.value +='9'">
+            <input type="button" class="operator" value="*" onclick="form.panel.value +='*'">
+            <br><br>
+            <input type="button" class="numdesign" value="4" onclick="form.panel.value +='4'">
+            <input type="button" class="numdesign" value="5" onclick="form.panel.value +='5'">
+            <input type="button" class="numdesign" value="6" onclick="form.panel.value +='6'">
+            <input type="button" class="operator" value="+" onclick="form.panel.value +='+'">
+            <br><br>
+            <input type="button" class="numdesign" value="1" onclick="form.panel.value +='1'">
+            <input type="button" class="numdesign" value="2" onclick="form.panel.value +='2'">
+            <input type="button" class="numdesign" value="3" onclick="form.panel.value +='3'">
+            <input type="button" class="operator" value="-" onclick="form.panel.value +='-'">
+            <br><br>
+            <input type="button" id="zero" value="0" onclick="form.panel.value +='0'">
+            <input type="button" class="numdesign" value="." onclick="form.panel.value +='.'">
+            <input type="button" class="operator" value="=" onclick="form.panel.value=eval(form.panel.value)">
+        </form>
+      </div>
+    </div>
+</body>
+<div class="footer"><p>Copyright &copy; Suman Roy All rights reserved </p></div>
+</html>
