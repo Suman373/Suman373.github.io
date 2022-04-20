@@ -100,6 +100,7 @@ button{
     background-color: rgb(204, 192, 29);
 }
 /* Making it responsive towards mobile screen */
+/* although the flexbox items are not responsive against Desktop View in mobile screens, the items doesn't grow and wrapped with space between which makes it bad */
 @media screen and (max-width:552px){
     .intro{
         font-size: 0.8rem;
