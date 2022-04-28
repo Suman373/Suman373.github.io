@@ -152,7 +152,7 @@ body::before{
     text-align: center;
 }
 
-@media screen and (max-width:500px) and (max-height:780px){
+@media screen and (max-width:490px){
     body{
         overflow: hidden;
     }
