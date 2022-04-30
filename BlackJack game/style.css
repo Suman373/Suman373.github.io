@@ -213,7 +213,6 @@ body::before{
     #footer{
     color:white;
     font-size:0.8rem;
-    height: 20px;
     bottom:0;
     display: grid;
     place-items: center;
